@@ -17,7 +17,7 @@ fetch("js/data/pokemon.json")
 
 
 
-/*
+
 // MUNICIPIS
 fetch("js/data/municipis.json")
 .then((response) => response.json())
@@ -28,7 +28,7 @@ fetch("js/data/municipis.json")
 	console.log(dades[0].municipi_nom)
 });
 
-/*
+
 
 // METEORITS
 fetch("js/data/earthMeteorites.json")
@@ -51,4 +51,3 @@ fetch("js/data/movies.json")
 	console.log(dades[0].title)
 });
 
-*/

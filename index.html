@@ -9,15 +9,27 @@
 </head>
 <body>
 
-<!-- Botons -->
-<button onclick="refrescar()">Refrescar</button>
-<button onclick="orderListAsc(datos)">Ordena Ascendente</button>
-<button onclick="orderListDesc(datos)">Ordena Descendente</button>
-<button onclick="busca(datos, 'termino')">Buscar</button>
-<button onclick="calcMitjana(datos)">Calcula Mitjana</button>
+  <div class="selector">
+    <label for="jsonSelector">Selecciona un JSON:</label>
+    <select id="jsonSelector">
+        <option value="pokemon">POKEMON</option>
+        <option value="municipios">MUNICIPIOS</option>
+        <option value="movies">MOVIES</option>
+        <option value="meteoritos">METEORITOS</option>
+    </select>
+  </div>
 
-<!-- Agregar un div con el id 'resultat' para mostrar resultados -->
-<div id="resultat"></div>
+  <!-- Botones -->
+  <button onclick="refrescar()">Refrescar</button>
+  <button onclick="orderList('asc')">Ordena Ascendente</button>
+  <button onclick="orderList('desc')">Ordena Descendente</button>
+  <button onclick="busca()">Buscar</button>
+  <button onclick="calcMitjana()">Calcula Mitjana</button>
+
+  <!-- Agregar un div con el id 'resultat' para mostrar resultados -->
+  <div id="resultat"></div>
+
+  
 
 </body>
 </html>
